@@ -1,0 +1,40 @@
+.title{
+    flex:none;width:100%;
+    background-color:red;
+    font-size:40px;font-weight:bold;
+    text-align:center;
+}
+.banner img{
+    width:100%;
+    height:100%;
+}
+.list{
+    display:flex;justify-content:center;
+}
+.tag{
+    flex:none;width:200px;
+    padding:10px;
+    border-radius:5px;
+    text-align:center;
+    cursor:pointer;
+}
+.frame{
+    flex:none;
+    text-align:center;
+}
+
+/* 螢幕小於1250px時套用以下設定*/
+@media (max-width:1250px){
+    .list{
+        flex-wrap:wrap;
+    }
+    .tag{
+        width:45%;
+    }
+}
+/* 螢幕小於500px時套用以下設定*/
+@media (max-width:500px){
+    .tag{
+        width:90%;
+    }
+}

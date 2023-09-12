@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" /> <!--網頁編碼utf-8-->
+    <title>Test</title>
+    <link rel="stylesheet" type="text/css" href="css-selector.css"/>
+</head>    
+<body>
+    <div class="banner">
+        <a href="https://www.facebook.com/taiwanjapanillust"><img src="https://scontent.ftpe8-2.fna.fbcdn.net/v/t39.30808-6/244204697_105345695252896_8245328261588957168_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=52f669&_nc_ohc=vEfC-Ama1UUAX9J5p6X&_nc_ht=scontent.ftpe8-2.fna&oh=00_AfAUdGnMlXP38pJp214v7118mM_U6RmJ-YnztrJDg2yfww&oe=6504D816" />
+        </a>
+    </div>
+    <hr/>
+    <div class="list">
+        <button class="tag" onclick="tag1()">自我介紹</button>
+        <button class="tag" onclick="tag2()">tag 2</button>
+        <button class="tag">tag 3</button>
+        <button class="tag">tag 4</button>
+    </div>
+    <div id="content1" class="frame">
+        哈囉、我是美沙！我是很喜歡台灣的日文老師。<br>
+        我跟老公在台北一起開小小日文教室。<br>
+        線上也可以參加〜<br>
+        我有8年教日文的經驗，學中文4年（可中文溝通）<br>
+        歡迎你們來上課〜٩( ᐛ )و
+    </div>
+    <div id="content2" style="display:none" class="frame">
+        content 2
+    </div>
+    <div id="content3" style="display:none" class="frame">
+        content 3
+    </div>
+    <div id="content4" style="display:none" class="frame">
+        content 4
+    </div>
+    <script>
+        function tag1(){
+            let cont1=document.querySelector("#content1");
+            let cont2=document.querySelector("#content2");
+            cont1.style.display="block";
+            cont2.style.display="none";
+        }
+        function tag2(){
+            let cont1=document.querySelector("#content1");
+            let cont2=document.querySelector("#content2");
+            cont1.style.display="none";
+            cont2.style.display="block";
+        }
+    </script>
+</body>
+</html>
