@@ -33,16 +33,6 @@
     background:rgba(100%,100%,100%,0.5);
     font-size:18px;
 }
-#content3{
-    flex:none;width:500px;
-    background:rgba(100%,100%,100%,0.5);
-    font-size:18px;
-}
-#content4{
-    flex:none;width:500px;
-    background:rgba(100%,100%,100%,0.5);
-    font-size:18px;
-}
 .frame{
     flex:none;
     padding:10px;
@@ -81,11 +71,4 @@
         width:300px;
         font-size:12px;
     }
-    #content3{
-        width:300px;
-        font-size:12px;
-    }
-    #content4{
-        width:300px;
-        font-size:12px;
 }
